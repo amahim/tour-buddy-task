@@ -134,13 +134,69 @@
                         <label class="block text-gray-700 font-bold">Pin Code:</label>
                         <input type="password" placeholder="------" class="w-full px-3 py-2 border rounded-md bg-gray-100 text-gray-700" >
                     </div>
+                    <!-- Payment method -->
+                    <div class="mt-8">
+                        <h1 class="text-xl text-black text-left font-bold">
+                          Select Method :
+                        </h1>
+                        <div class="flex md:flex-row flex-col gap-2 mt-2 items-center">
+                            <div class="flex gap-2 items-center">
+                                <label class="flex items-center space-x-2 bg-blue-400 font-bold text-white px-4 py-2 rounded-full cursor-pointer">
+                                    <input type="radio" name="payment" value="Bkash" class="hidden">
+                                    <span class="w-4 h-4 bg-white rounded-full inline-block"></span>
+                                    <span>Bkash</span>
+                                </label>
+                                <label class="flex items-center space-x-2 bg-blue-400 font-bold text-white px-4 py-2 rounded-full cursor-pointer">
+                                    <input type="radio" name="payment" value="Nagad" class="hidden">
+                                    <span class="w-4 h-4 bg-white rounded-full inline-block"></span>
+                                    <span>Nagad</span>
+                                </label>
+                            </div>
+                            <div class="flex gap-2 items-center">
+                              <label class="flex items-center space-x-2 bg-blue-400 font-bold text-white px-4 py-2 rounded-full cursor-pointer">
+                                <input type="radio" name="payment" value="UPAY" class="hidden">
+                                <span class="w-4 h-4 bg-white rounded-full inline-block"></span>
+                                <span>UPAY</span>
+                            </label>
+                            <label class="flex items-center space-x-2 bg-blue-400 font-bold text-white px-4 py-2 rounded-full cursor-pointer">
+                                <input type="radio" name="payment" value="VISA" class="hidden">
+                                <span class="w-4 h-4 bg-white rounded-full inline-block"></span>
+                                <span>VISA</span>
+                            </label>  
+                                
+                            </div>
+                            <div class="flex gap-2 items-center">
+                                <label class="flex items-center space-x-2 bg-blue-400 font-bold text-white px-4 py-2 rounded-full cursor-pointer">
+                                <input type="radio" name="payment" value="MasterCard" class="hidden">
+                                <span class="w-4 h-4 bg-white rounded-full inline-block"></span>
+                                <span>MasterCard</span>
+                            </label>
+                            <label class="flex items-center space-x-2 bg-blue-400 font-bold text-white px-4 py-2 rounded-full cursor-pointer">
+                                <input type="radio" name="payment" value="Others" class="hidden">
+                                <span class="w-4 h-4 bg-white rounded-full inline-block"></span>
+                                <span>Others</span>
+                            </label>
+                            </div>
+                            
+                            
+                        </div>
+                      </div>
+                    <!-- confirm button -->
+                    <div class="flex justify-center mt-4">
+                        <button class="text-white bg-[#13253F] px-10 rounded-full py-4 font-bold">Confirm Payment</button>
+                    </div>
                 </form>
             </div>
             <div class="md:w-2/5 flex md:justify-end">
                 <img src="./assets/payment 1.jpeg" alt="" class="w-full md:w-72 md:h-56 h-64">
             </div>
           </div>
+          
      </div>
+     <!-- Banking image -->
+      <div class="w-4/5 mx-auto flex justify-center mt-10"> 
+        <img src="./assets/ssl2 1.jpeg" alt="">
+      </div>
    
   </body>
 </html>
