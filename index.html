@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <!-- Tailwind installment -->
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
         @theme {
           --color-clifford: #da373d;
         }
       </style>
+      <!-- css connect -->
       <link rel="stylesheet" href="./style.css">
+      <!-- DaisyUi -->
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" 
+      rel="stylesheet" type="text/css" />
+      <script src="https://cdn.tailwindcss.com"></script>
       <!-- Google fonts -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,9 +27,50 @@
     <!-- Guide Profile Page -->
      <!-- Navbar -->
     <div class="w-[90%] mx-auto ">
-        <div>
-            
-        </div>
+        <div class="navbar ">
+            <div class="navbar-start  lg:w-1/5">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li class="text-[#495560] font-bold"><a>Home</a></li>
+                  <li class="text-[#495560] font-bold"><a>About Us</a></li>
+                  <li class="text-[#495560] font-bold"><a>Our Most Rated Guides</a></li>
+                  <li class="text-[#495560] font-bold"><a>Our Packages</a></li>
+                  <li class="text-[#495560] font-bold"><a>Most Desired Places</a></li>
+                </ul>
+              </div>
+              <a class="font-zen font-base text-xl md:text-2xl text-[#495560] btn btn-ghost ">tour buddy</a>
+            </div>
+            <div class="navbar-end  lg:w-4/5">
+                <div class=" hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                      <li class="text-[#495560] font-bold"><a>Home</a></li>
+                        <li class="text-[#495560] font-bold"><a>About Us</a></li>
+                    <li class="text-[#495560] font-bold"><a>Our Most Rated Guides</a><li>
+                        <li class="text-[#495560] font-bold"><a>Our Packages</a></li>
+                        <li class="text-[#495560] font-bold"><a>Most Desired Places</a></li>
+                    </ul>
+                  </div>
+                  <div >
+                    <a class="w-[100px] h-[40px] md:w-[140px] md:h-[50px] bg-[#FFDA32] text-[#1C2B38] rounded-sm flex justify-center pt-2 text-xl md:text-2xl font-bold">Sign In</a>
+                  </div>
+            </div>
+          </div>
     </div>
 </body>
 </html>
