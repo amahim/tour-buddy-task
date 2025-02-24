@@ -1,76 +1,216 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <!-- Tailwind installment -->
     <style type="text/tailwindcss">
-        @theme {
-          --color-clifford: #da373d;
-        }
-      </style>
-      <!-- css connect -->
-      <link rel="stylesheet" href="./style.css">
-      <!-- DaisyUi -->
-      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" 
-      rel="stylesheet" type="text/css" />
-      <script src="https://cdn.tailwindcss.com"></script>
-      <!-- Google fonts -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&family=Zen+Dots&display=swap" rel="stylesheet">
+      @theme {
+        --color-clifford: #da373d;
+      }
+    </style>
+    <!-- css connect -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- DaisyUi -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&family=Zen+Dots&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Tour Buddy</title>
-</head>
-<body class="font-mulish">
+  </head>
+  <body class="font-mulish">
     <!-- Guide Profile Page -->
-     <!-- Navbar -->
-    <div class="w-[90%] mx-auto ">
-        <div class="navbar ">
-            <div class="navbar-start  lg:w-1/5">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h8m-8 6h16" />
-                  </svg>
-                </div>
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                  <li class="text-[#495560] font-bold"><a>Home</a></li>
-                  <li class="text-[#495560] font-bold"><a>About Us</a></li>
-                  <li class="text-[#495560] font-bold"><a>Our Most Rated Guides</a></li>
-                  <li class="text-[#495560] font-bold"><a>Our Packages</a></li>
-                  <li class="text-[#495560] font-bold"><a>Most Desired Places</a></li>
-                </ul>
-              </div>
-              <a class="font-zen font-base text-xl md:text-2xl text-[#495560] btn btn-ghost ">tour buddy</a>
+    <!-- Navbar -->
+    <div class="w-[90%] mx-auto py-5">
+      <div class="navbar">
+        <div class="navbar-start lg:w-1/5">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
             </div>
-            <div class="navbar-end  lg:w-4/5">
-                <div class=" hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
-                      <li class="text-[#495560] font-bold"><a>Home</a></li>
-                        <li class="text-[#495560] font-bold"><a>About Us</a></li>
-                    <li class="text-[#495560] font-bold"><a>Our Most Rated Guides</a><li>
-                        <li class="text-[#495560] font-bold"><a>Our Packages</a></li>
-                        <li class="text-[#495560] font-bold"><a>Most Desired Places</a></li>
-                    </ul>
-                  </div>
-                  <div >
-                    <a class="w-[100px] h-[40px] md:w-[140px] md:h-[50px] bg-[#FFDA32] text-[#1C2B38] rounded-sm flex justify-center pt-2 text-xl md:text-2xl font-bold">Sign In</a>
-                  </div>
-            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li class="text-[#495560] font-bold"><a>Home</a></li>
+              <li class="text-[#495560] font-bold"><a>About Us</a></li>
+              <li class="text-[#495560] font-bold">
+                <a>Our Most Rated Guides</a>
+              </li>
+              <li class="text-[#495560] font-bold"><a>Our Packages</a></li>
+              <li class="text-[#495560] font-bold">
+                <a>Most Desired Places</a>
+              </li>
+            </ul>
           </div>
+          <a
+            class="font-zen font-base text-xl md:text-2xl text-[#495560] btn btn-ghost"
+            >tour buddy</a
+          >
+        </div>
+        <div class="navbar-end lg:w-4/5">
+          <div class="hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li class="text-[#495560] font-bold"><a>Home</a></li>
+              <li class="text-[#495560] font-bold"><a>About Us</a></li>
+              <li class="text-[#495560] font-bold">
+                <a>Our Most Rated Guides</a>
+              </li>
+              <li></li>
+              <li class="text-[#495560] font-bold"><a>Our Packages</a></li>
+              <li class="text-[#495560] font-bold">
+                <a>Most Desired Places</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <a
+              class="w-[100px] h-[40px] md:w-[140px] md:h-[50px] bg-[#FFDA32] text-[#1C2B38] rounded-sm flex justify-center pt-2 text-xl md:text-2xl font-bold"
+              >Sign In</a
+            >
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+    <!--Selected guide section  -->
+    <div class="w-4/5 mx-auto mt-16">
+        <div>
+            <h1 class="text-xl text-black text-left font-bold">Your Selected Guide:</h1>
+        </div>
+        <!-- profile -->
+        <div class=" mt-10 flex flex-col md:flex-row justify-center gap-6 md:gap-0 md:justify-between items-center">
+            <!-- card -->
+            <div class="w-full p-2 shadow-xl flex gap-4 md:flex-row flex-col items-center rounded-md md:w-4/6 ">
+                <!-- img -->
+                 <div>
+                    <img src="./assets/guidePP.jpeg" alt="Guide Profile Picture"
+                    class="rounded-md">
+                 </div>
+                 <!-- guide info -->
+                 <div class="flex flex-col gap-4">
+                    <!-- upper div ratings -->
+                    <div class="flex flex-col md:flex-row gap-2 md:gap-4 items-center">
+                        <div>
+                            <h1 class="font-bold text-white text-lg md:text-xl bg-[#7BBCB0] py-1 px-5 rounded-full">KUAKATA</h1>
+                            
+                        </div>
+                        <div class="hidden md:block">
+                                <h1 class="text-[#C7CDD0] text-xl">|</h1>
+                        </div>
+                        <div>
+                            <div class="rating">
+                                <input type="radio" name="rating-1" class="mask mask-star bg-[#FFA432]" />
+                                <input type="radio" name="rating-1" class="mask mask-star bg-[#FFA432]"  />
+                                <input type="radio" name="rating-1" class="mask mask-star bg-[#FFA432]" />
+                                <input type="radio" name="rating-1" class="mask mask-star bg-[#FFA432]" checked="checked"/>
+                                <input type="radio" name="rating-1" class="mask mask-star " />
+                              </div>
+                        </div>
+                        <div>
+                            <h1 class="text-[#778088] text-xl font-semibold">(584 reviews)</h1>
+                    </div>
+                    </div>
+                    <!-- lower divs -->
+                    <div class="flex flex-col md:flex-row justify-between w-full md:gap-10">
+                        <!-- Name -->
+                        <div>
+                            <!-- name div -->
+                            <div>
+                                <h1 class="font-bold font-volkhov text-2xl text-[#1C2B38]">Raihan Ahmad</h1>
+                            </div>
+                            <!-- other info div -->
+                            <div class="flex flex-col md:flex-row gap-1 md:gap-4 items-center">
+                                <div class="font-semibold text-[#495560]  flex gap-2 items-center">
+                                    <p><i class="fa-regular fa-clock"></i></p>
+                                    <p>2 hours</p>
+                                </div>
+                                <div class="hidden md:block">
+                                    <h1 class="text-[495560] ">|</h1>
+                                </div>
+                                <div class="font-semibold text-[#495560]  flex gap-2 items-center">
+                                    <p><i class="fa-solid fa-truck-monster"></i></p>
+                                    <p>Transport</p>
+                                </div>
+                                <div class="hidden md:block">
+                                    <h1 class="text-[495560] ">|</h1>
+                            </div>
+                                
+                                <div class="font-semibold text-[#495560]  flex gap-2 items-center">
+                                    <p><i class="fa-solid fa-people-roof"></i></p>
+                                    <p>Family Plan</p>
+                                </div>
+                            </div>
+                            <!-- Extra infos -->
+                             <div>
+                                <!-- upper -->
+                                <div class="flex flex-col md:flex-row gap-1 md:gap-4 items-center">
+                                    <div class="font-semibold text-[#495560]  flex gap-2 items-center">
+                                        <p>Language: </p>
+                                        <p>Bangla</p>
+                                    </div>
+                                    <div class="hidden md:block">
+                                        <h1 class="text-[495560] ">|</h1>
+                                    </div>
+                                    <div class="font-semibold text-[#495560]  flex gap-2 items-center">
+                                        <p><i class="fa-solid fa-map-location"></i></p>
+                                        <p>Chittagong</p>
+                                    </div>
+                                </div>
+                                <!-- lower -->
+                                <div class="flex flex-col md:flex-row gap-1 md:gap-4 items-center">
+                                    <div class="font-semibold text-[#495560]  flex gap-2 items-center">
+                                        <p>Experience: </p>
+                                        <p>3 Years</p>
+                                    </div>
+                                    <div class="hidden md:block">
+                                        <h1 class="text-[495560] ">|</h1>
+                                    </div>
+                                    <div class="font-semibold text-[#495560]  flex gap-2 items-center">
+                                        <p><i class="fa-solid fa-phone"></i></p>
+                                        <p>+880 123456789</p>
+                                    </div>
+                                </div>
+
+                             </div>
+                        </div>
+                        <!-- Price -->
+                         <div class="md:mt-0 mt-2">
+                            <h1 class="text-center md:text-left font-volkhov text-[#7BBCB0] text-xl md:text-2xl font-bold">TK: 250.00</h1>
+                            <p class="text-center md:text-right -mt-2 text-[#778088] text-[12px]">per person</p>
+                         </div>
+                    </div>
+                 </div>
+            </div>
+            <!-- Hire Button -->
+             <div class="md:w-2/6 md:flex md:justify-end">
+                <button class="font-zen btn border-none bg-[#13253F] rounded-full text-white text-xl md:text-2xl md:px-16 px-10 h-[64px] md:h-[96px]">Hire Me</button>
+             </div>
+        </div>
+    </div>
+  </body>
 </html>
