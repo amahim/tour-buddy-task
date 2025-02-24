@@ -24,9 +24,12 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&family=Zen+Dots&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&family=Zen+Dots&display=swap"
+      rel="stylesheet"
+    />
     <!-- font awsome cdn -->
     <link
       rel="stylesheet"
@@ -41,162 +44,320 @@
     <!--! Payment Page !-->
     <!-- Navbar -->
     <div class="w-[90%] mx-auto py-5">
-        <div class="navbar">
-          <div class="navbar-start lg:w-1/5">
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-200 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+      <div class="navbar">
+        <div class="navbar-start lg:w-1/5">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
               >
-                <li class="text-[#495560] font-bold"><a>Home</a></li>
-                <li class="text-[#495560] font-bold"><a>About Us</a></li>
-                <li class="text-[#495560] font-bold">
-                  <a>Our Most Rated Guides</a>
-                </li>
-                <li class="text-[#495560] font-bold"><a>Our Packages</a></li>
-                <li class="text-[#495560] font-bold">
-                  <a>Most Desired Places</a>
-                </li>
-              </ul>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
             </div>
-            <a href="index.html"
-              class="font-zen font-base text-xl md:text-2xl text-[#495560] btn btn-ghost"
-              >tour buddy</a
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-200 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li class="text-[#495560] font-bold"><a>Home</a></li>
+              <li class="text-[#495560] font-bold"><a>About Us</a></li>
+              <li class="text-[#495560] font-bold">
+                <a>Our Most Rated Guides</a>
+              </li>
+              <li class="text-[#495560] font-bold"><a>Our Packages</a></li>
+              <li class="text-[#495560] font-bold">
+                <a>Most Desired Places</a>
+              </li>
+            </ul>
+          </div>
+          <a
+            href="index.html"
+            class="font-zen font-base text-xl md:text-2xl text-[#495560] btn btn-ghost"
+            >tour buddy</a
+          >
+        </div>
+        <div class="navbar-end lg:w-4/5">
+          <div class="hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li class="text-[#495560] font-bold"><a>Home</a></li>
+              <li class="text-[#495560] font-bold"><a>About Us</a></li>
+              <li class="text-[#495560] font-bold">
+                <a>Our Most Rated Guides</a>
+              </li>
+
+              <li class="text-[#495560] font-bold"><a>Our Packages</a></li>
+              <li class="text-[#495560] font-bold">
+                <a>Most Desired Places</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <a
+              class="w-[100px] h-[40px] md:w-[140px] md:h-[50px] bg-[#FFDA32] text-[#1C2B38] rounded-sm flex justify-center pt-2 text-xl md:text-2xl font-bold"
+              >Sign In</a
             >
           </div>
-          <div class="navbar-end lg:w-4/5">
-            <div class="hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li class="text-[#495560] font-bold"><a>Home</a></li>
-                <li class="text-[#495560] font-bold"><a>About Us</a></li>
-                <li class="text-[#495560] font-bold">
-                  <a>Our Most Rated Guides</a>
-                </li>
-             
-                <li class="text-[#495560] font-bold"><a>Our Packages</a></li>
-                <li class="text-[#495560] font-bold">
-                  <a>Most Desired Places</a>
-                </li>
-              </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Payment -->
+    <div class="w-4/5 mx-auto">
+      <div>
+        <h1 class="text-xl text-black text-left font-bold">Payment</h1>
+      </div>
+      <div class="mt-6">
+        <h1 class="text-black font-inria text-2xl md:text-4xl font-medium">
+          Choose Payment Method
+        </h1>
+      </div>
+      <!-- form -->
+      <div
+        class="flex flex-col-reverse md:flex-row md:justify-between justify-center gap-6 md:gap-0 mt-10"
+      >
+        <div class="md:w-3/5">
+          <form>
+            <div class="mb-4">
+              <label class="block text-gray-700 font-bold">Name:</label>
+              <input
+                type="text"
+                placeholder="Xxmaf Amer"
+                class="w-full px-3 py-2 border rounded-md bg-gray-100 text-gray-700"
+              />
             </div>
-            <div>
-              <a
-                class="w-[100px] h-[40px] md:w-[140px] md:h-[50px] bg-[#FFDA32] text-[#1C2B38] rounded-sm flex justify-center pt-2 text-xl md:text-2xl font-bold"
-                >Sign In</a
+            <div class="mb-4">
+              <label class="block text-gray-700 font-bold"
+                >Transaction Id:</label
               >
+              <input
+                type="text"
+                placeholder="----------"
+                class="w-full px-3 py-2 border rounded-md bg-gray-100 text-gray-700"
+              />
+            </div>
+            <div class="mb-4">
+              <label class="block text-gray-700 font-bold">Phone Number:</label>
+              <input
+                type="text"
+                placeholder="+8801321454687"
+                class="w-full px-3 py-2 border rounded-md bg-gray-100 text-gray-700"
+              />
+            </div>
+            <div class="mb-4">
+              <label class="block text-gray-700 font-bold">Pin Code:</label>
+              <input
+                type="password"
+                placeholder="------"
+                class="w-full px-3 py-2 border rounded-md bg-gray-100 text-gray-700"
+              />
+            </div>
+            <!-- Payment method -->
+            <div class="mt-8">
+              <h1 class="text-xl text-black text-left font-bold">
+                Select Method :
+              </h1>
+              <div class="flex md:flex-row flex-col gap-2 mt-2 items-center">
+                <div class="flex gap-2 items-center">
+                  <label
+                    class="flex items-center space-x-2 bg-blue-400 font-bold text-white px-4 py-2 rounded-full cursor-pointer"
+                  >
+                    <input
+                      type="radio"
+                      name="payment"
+                      value="Bkash"
+                      class="hidden"
+                    />
+                    <span
+                      class="w-4 h-4 bg-white rounded-full inline-block"
+                    ></span>
+                    <span>Bkash</span>
+                  </label>
+                  <label
+                    class="flex items-center space-x-2 bg-blue-400 font-bold text-white px-4 py-2 rounded-full cursor-pointer"
+                  >
+                    <input
+                      type="radio"
+                      name="payment"
+                      value="Nagad"
+                      class="hidden"
+                    />
+                    <span
+                      class="w-4 h-4 bg-white rounded-full inline-block"
+                    ></span>
+                    <span>Nagad</span>
+                  </label>
+                </div>
+                <div class="flex gap-2 items-center">
+                  <label
+                    class="flex items-center space-x-2 bg-blue-400 font-bold text-white px-4 py-2 rounded-full cursor-pointer"
+                  >
+                    <input
+                      type="radio"
+                      name="payment"
+                      value="UPAY"
+                      class="hidden"
+                    />
+                    <span
+                      class="w-4 h-4 bg-white rounded-full inline-block"
+                    ></span>
+                    <span>UPAY</span>
+                  </label>
+                  <label
+                    class="flex items-center space-x-2 bg-blue-400 font-bold text-white px-4 py-2 rounded-full cursor-pointer"
+                  >
+                    <input
+                      type="radio"
+                      name="payment"
+                      value="VISA"
+                      class="hidden"
+                    />
+                    <span
+                      class="w-4 h-4 bg-white rounded-full inline-block"
+                    ></span>
+                    <span>VISA</span>
+                  </label>
+                </div>
+                <div class="flex gap-2 items-center">
+                  <label
+                    class="flex items-center space-x-2 bg-blue-400 font-bold text-white px-4 py-2 rounded-full cursor-pointer"
+                  >
+                    <input
+                      type="radio"
+                      name="payment"
+                      value="MasterCard"
+                      class="hidden"
+                    />
+                    <span
+                      class="w-4 h-4 bg-white rounded-full inline-block"
+                    ></span>
+                    <span>MasterCard</span>
+                  </label>
+                  <label
+                    class="flex items-center space-x-2 bg-blue-400 font-bold text-white px-4 py-2 rounded-full cursor-pointer"
+                  >
+                    <input
+                      type="radio"
+                      name="payment"
+                      value="Others"
+                      class="hidden"
+                    />
+                    <span
+                      class="w-4 h-4 bg-white rounded-full inline-block"
+                    ></span>
+                    <span>Others</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!-- confirm button -->
+            <div class="flex justify-center mt-4">
+              <button
+                class="text-white bg-[#13253F] px-10 rounded-full py-4 font-bold"
+              >
+                Confirm Payment
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="md:w-2/5 flex md:justify-end">
+          <img
+            src="./assets/payment 1.jpeg"
+            alt=""
+            class="w-full md:w-72 md:h-56 h-64"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Banking image -->
+    <div class="w-4/5 mx-auto flex justify-center mt-10">
+      <img src="./assets/ssl2 1.jpeg" alt="" />
+    </div>
+    <!-- footer -->
+    <div class="mt-20 bg-[#13253F]">
+      <div class="w-4/5 mx-auto pt-10 pb-8">
+        <h1
+          class="font-zen text-[#495560] text-2xl mb-5 text-center md:text-start md:-ml-8"
+        >
+          tour buddy
+        </h1>
+        <div>
+          <!-- inputs -->
+          <div
+            class="flex flex-col md:flex-row gap-6 md:gap-0 md:justify-between items-center"
+          >
+            <!-- selects -->
+            <div class="flex flex-col gap-6 md:gap-10">
+              <select
+                id="options"
+                name="option"
+                class="border-2 border-[#FFFFFF33] rounded-md px-4 py-2 bg-[#13253F] text-[#FFFFFF99] font-semibold"
+              >
+                <option value="option1">English (UK)</option>
+              </select>
+              <select
+                id="options"
+                name="option"
+                class="border-2 border-[#FFFFFF33] rounded-md px-4 py-2 bg-[#13253F] text-[#FFFFFF99] font-semibold"
+              >
+                <option value="option1">U.S. Dollar ($)</option>
+              </select>
+            </div>
+            <!-- payment -->
+            <div
+              class="text-[#FFFFFF99] list-none space-y-2 md:text-start text-center"
+            >
+              <li class="text-white font-bold">Payment</li>
+              <li>About Us</li>
+              <li>Blog</li>
+              <li>Press Room</li>
+              <li>Careers</li>
+            </div>
+            <!-- Help -->
+            <div>
+              <div
+                class="text-[#FFFFFF99] list-none space-y-2 md:text-start text-center"
+              >
+                <li class="text-white font-bold">Help</li>
+                <li>Contact Us</li>
+                <li>FAQs</li>
+                <li>Terms and Conditions</li>
+                <li>Privacy Policy</li>
+                <li>Sitemap</li>
+              </div>
+            </div>
+            <!-- payments -->
+            <div class="grid grid-cols-5 gap-1">
+              <img src="./assets/mc.png" alt="" />
+              <img src="./assets/bitpay.png" alt="" />
+              <img src="./assets/visa.png" alt="" />
+              <img src="./assets/ae .png" alt="" />
+              <img src="./assets/discover.png" alt="" />
+              <img src="./assets/so.png" alt="" />
+              <img src="./assets/gpay.png" alt="" />
+              <img src="./assets/apple.png" alt="" />
+              <img src="./assets/paypal.png" alt="" />
+              <img src="./assets/m.png" alt="" />
             </div>
           </div>
         </div>
-    </div>
-    <!-- Payment -->
-     <div class="w-4/5 mx-auto">
-          <div>
-            <h1 class="text-xl text-black text-left font-bold">
-              Payment
-            </h1>
-          </div>
-          <div class="mt-6">
-            <h1 class="text-black font-inria text-2xl md:text-4xl font-medium">Choose Payment Method</h1>
-          </div>
-          <!-- form -->
-          <div class="flex flex-col-reverse md:flex-row md:justify-between justify-center gap-6 md:gap-0 mt-10">
-            <div class="md:w-3/5">
-                <form>
-                    <div class="mb-4">
-                        <label class="block text-gray-700 font-bold">Name:</label>
-                        <input type="text" placeholder="Xxmaf Amer" class="w-full px-3 py-2 border rounded-md bg-gray-100 text-gray-700" >
-                    </div>
-                    <div class="mb-4">
-                        <label class="block text-gray-700 font-bold">Transaction Id:</label>
-                        <input type="text" placeholder="----------" class="w-full px-3 py-2 border rounded-md bg-gray-100 text-gray-700" >
-                    </div>
-                    <div class="mb-4">
-                        <label class="block text-gray-700 font-bold">Phone Number:</label>
-                        <input type="text" placeholder="+8801321454687" class="w-full px-3 py-2 border rounded-md bg-gray-100 text-gray-700" >
-                    </div>
-                    <div class="mb-4">
-                        <label class="block text-gray-700 font-bold">Pin Code:</label>
-                        <input type="password" placeholder="------" class="w-full px-3 py-2 border rounded-md bg-gray-100 text-gray-700" >
-                    </div>
-                    <!-- Payment method -->
-                    <div class="mt-8">
-                        <h1 class="text-xl text-black text-left font-bold">
-                          Select Method :
-                        </h1>
-                        <div class="flex md:flex-row flex-col gap-2 mt-2 items-center">
-                            <div class="flex gap-2 items-center">
-                                <label class="flex items-center space-x-2 bg-blue-400 font-bold text-white px-4 py-2 rounded-full cursor-pointer">
-                                    <input type="radio" name="payment" value="Bkash" class="hidden">
-                                    <span class="w-4 h-4 bg-white rounded-full inline-block"></span>
-                                    <span>Bkash</span>
-                                </label>
-                                <label class="flex items-center space-x-2 bg-blue-400 font-bold text-white px-4 py-2 rounded-full cursor-pointer">
-                                    <input type="radio" name="payment" value="Nagad" class="hidden">
-                                    <span class="w-4 h-4 bg-white rounded-full inline-block"></span>
-                                    <span>Nagad</span>
-                                </label>
-                            </div>
-                            <div class="flex gap-2 items-center">
-                              <label class="flex items-center space-x-2 bg-blue-400 font-bold text-white px-4 py-2 rounded-full cursor-pointer">
-                                <input type="radio" name="payment" value="UPAY" class="hidden">
-                                <span class="w-4 h-4 bg-white rounded-full inline-block"></span>
-                                <span>UPAY</span>
-                            </label>
-                            <label class="flex items-center space-x-2 bg-blue-400 font-bold text-white px-4 py-2 rounded-full cursor-pointer">
-                                <input type="radio" name="payment" value="VISA" class="hidden">
-                                <span class="w-4 h-4 bg-white rounded-full inline-block"></span>
-                                <span>VISA</span>
-                            </label>  
-                                
-                            </div>
-                            <div class="flex gap-2 items-center">
-                                <label class="flex items-center space-x-2 bg-blue-400 font-bold text-white px-4 py-2 rounded-full cursor-pointer">
-                                <input type="radio" name="payment" value="MasterCard" class="hidden">
-                                <span class="w-4 h-4 bg-white rounded-full inline-block"></span>
-                                <span>MasterCard</span>
-                            </label>
-                            <label class="flex items-center space-x-2 bg-blue-400 font-bold text-white px-4 py-2 rounded-full cursor-pointer">
-                                <input type="radio" name="payment" value="Others" class="hidden">
-                                <span class="w-4 h-4 bg-white rounded-full inline-block"></span>
-                                <span>Others</span>
-                            </label>
-                            </div>
-                            
-                            
-                        </div>
-                      </div>
-                    <!-- confirm button -->
-                    <div class="flex justify-center mt-4">
-                        <button class="text-white bg-[#13253F] px-10 rounded-full py-4 font-bold">Confirm Payment</button>
-                    </div>
-                </form>
+        <!-- copyrights and socials -->
+        <div class="mt-10 flex flex-col-reverse items-center md:flex-row md:justify-between justify-center gap-4 md:gap-0">
+            <h1 class="text-[#FFFFFF99] md:text-start text-center md:text-base text-sm">Copyright 2025 Tour Buddy. All Rights Reserved</h1>
+            <div class="text-white text-3xl space-x-3">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-square-pinterest"></i>
             </div>
-            <div class="md:w-2/5 flex md:justify-end">
-                <img src="./assets/payment 1.jpeg" alt="" class="w-full md:w-72 md:h-56 h-64">
-            </div>
-          </div>
-          
-     </div>
-     <!-- Banking image -->
-      <div class="w-4/5 mx-auto flex justify-center mt-10"> 
-        <img src="./assets/ssl2 1.jpeg" alt="">
+        </div>
       </div>
-   
+    </div>
   </body>
 </html>
