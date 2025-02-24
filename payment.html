@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/tour-svgrepo-com.svg"
+      type="image/x-icon"
+    />
+    <!-- Tailwind installment -->
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+      }
+    </style>
+    <!-- css connect -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- DaisyUi -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&family=Zen+Dots&display=swap" rel="stylesheet">
+    <!-- font awsome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Tour Buddy | Payment</title>
+  </head>
+  <body class="font-mulish">
+    <!--! Payment Page !-->
+    <!-- Navbar -->
+    <div class="w-[90%] mx-auto py-5">
+        <div class="navbar">
+          <div class="navbar-start lg:w-1/5">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-200 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li class="text-[#495560] font-bold"><a>Home</a></li>
+                <li class="text-[#495560] font-bold"><a>About Us</a></li>
+                <li class="text-[#495560] font-bold">
+                  <a>Our Most Rated Guides</a>
+                </li>
+                <li class="text-[#495560] font-bold"><a>Our Packages</a></li>
+                <li class="text-[#495560] font-bold">
+                  <a>Most Desired Places</a>
+                </li>
+              </ul>
+            </div>
+            <a href="index.html"
+              class="font-zen font-base text-xl md:text-2xl text-[#495560] btn btn-ghost"
+              >tour buddy</a
+            >
+          </div>
+          <div class="navbar-end lg:w-4/5">
+            <div class="hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li class="text-[#495560] font-bold"><a>Home</a></li>
+                <li class="text-[#495560] font-bold"><a>About Us</a></li>
+                <li class="text-[#495560] font-bold">
+                  <a>Our Most Rated Guides</a>
+                </li>
+             
+                <li class="text-[#495560] font-bold"><a>Our Packages</a></li>
+                <li class="text-[#495560] font-bold">
+                  <a>Most Desired Places</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a
+                class="w-[100px] h-[40px] md:w-[140px] md:h-[50px] bg-[#FFDA32] text-[#1C2B38] rounded-sm flex justify-center pt-2 text-xl md:text-2xl font-bold"
+                >Sign In</a
+              >
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Payment -->
+     <div class="w-4/5 mx-auto">
+          <div>
+            <h1 class="text-xl text-black text-left font-bold">
+              Payment
+            </h1>
+          </div>
+          <div class="mt-6">
+            <h1 class="text-black font-inria text-2xl md:text-4xl font-medium">Choose Payment Method</h1>
+          </div>
+          <!-- form -->
+          <div class="flex flex-col-reverse md:flex-row md:justify-between justify-center gap-6 md:gap-0 mt-10">
+            <div class="md:w-3/5">
+                <form>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-bold">Name:</label>
+                        <input type="text" placeholder="Xxmaf Amer" class="w-full px-3 py-2 border rounded-md bg-gray-100 text-gray-700" >
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-bold">Transaction Id:</label>
+                        <input type="text" placeholder="----------" class="w-full px-3 py-2 border rounded-md bg-gray-100 text-gray-700" >
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-bold">Phone Number:</label>
+                        <input type="text" placeholder="+8801321454687" class="w-full px-3 py-2 border rounded-md bg-gray-100 text-gray-700" >
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 font-bold">Pin Code:</label>
+                        <input type="password" placeholder="------" class="w-full px-3 py-2 border rounded-md bg-gray-100 text-gray-700" >
+                    </div>
+                </form>
+            </div>
+            <div class="md:w-2/5 flex md:justify-end">
+                <img src="./assets/payment 1.jpeg" alt="" class="w-full md:w-72 md:h-56 h-64">
+            </div>
+          </div>
+     </div>
+   
+  </body>
+</html>
