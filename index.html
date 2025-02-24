@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link
+      rel="shortcut icon"
+      href="./assets/tour-svgrepo-com.svg"
+      type="image/x-icon"
+    />
     <!-- Tailwind installment -->
     <style type="text/tailwindcss">
       @theme {
@@ -27,7 +31,13 @@
       rel="stylesheet"
     />
     <!-- font awsome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Tour Buddy</title>
   </head>
   <body class="font-mulish">
@@ -99,118 +109,282 @@
     </div>
     <!--Selected guide section  -->
     <div class="w-4/5 mx-auto mt-16">
-        <div>
-            <h1 class="text-xl text-black text-left font-bold">Your Selected Guide:</h1>
-        </div>
-        <!-- profile -->
-        <div class=" mt-10 flex flex-col md:flex-row justify-center gap-6 md:gap-0 md:justify-between items-center">
-            <!-- card -->
-            <div class="w-full p-2 shadow-xl flex gap-4 md:flex-row flex-col items-center rounded-md md:w-4/6 ">
-                <!-- img -->
-                 <div>
-                    <img src="./assets/guidePP.jpeg" alt="Guide Profile Picture"
-                    class="rounded-md">
-                 </div>
-                 <!-- guide info -->
-                 <div class="flex flex-col gap-4">
-                    <!-- upper div ratings -->
-                    <div class="flex flex-col md:flex-row gap-2 md:gap-4 items-center">
-                        <div>
-                            <h1 class="font-bold text-white text-lg md:text-xl bg-[#7BBCB0] py-1 px-5 rounded-full">KUAKATA</h1>
-                            
-                        </div>
-                        <div class="hidden md:block">
-                                <h1 class="text-[#C7CDD0] text-xl">|</h1>
-                        </div>
-                        <div>
-                            <div class="rating">
-                                <input type="radio" name="rating-1" class="mask mask-star bg-[#FFA432]" />
-                                <input type="radio" name="rating-1" class="mask mask-star bg-[#FFA432]"  />
-                                <input type="radio" name="rating-1" class="mask mask-star bg-[#FFA432]" />
-                                <input type="radio" name="rating-1" class="mask mask-star bg-[#FFA432]" checked="checked"/>
-                                <input type="radio" name="rating-1" class="mask mask-star " />
-                              </div>
-                        </div>
-                        <div>
-                            <h1 class="text-[#778088] text-xl font-semibold">(584 reviews)</h1>
-                    </div>
-                    </div>
-                    <!-- lower divs -->
-                    <div class="flex flex-col md:flex-row justify-between w-full md:gap-10">
-                        <!-- Name -->
-                        <div>
-                            <!-- name div -->
-                            <div>
-                                <h1 class="font-bold font-volkhov text-2xl text-[#1C2B38]">Raihan Ahmad</h1>
-                            </div>
-                            <!-- other info div -->
-                            <div class="flex flex-col md:flex-row gap-1 md:gap-4 items-center">
-                                <div class="font-semibold text-[#495560]  flex gap-2 items-center">
-                                    <p><i class="fa-regular fa-clock"></i></p>
-                                    <p>2 hours</p>
-                                </div>
-                                <div class="hidden md:block">
-                                    <h1 class="text-[495560] ">|</h1>
-                                </div>
-                                <div class="font-semibold text-[#495560]  flex gap-2 items-center">
-                                    <p><i class="fa-solid fa-truck-monster"></i></p>
-                                    <p>Transport</p>
-                                </div>
-                                <div class="hidden md:block">
-                                    <h1 class="text-[495560] ">|</h1>
-                            </div>
-                                
-                                <div class="font-semibold text-[#495560]  flex gap-2 items-center">
-                                    <p><i class="fa-solid fa-people-roof"></i></p>
-                                    <p>Family Plan</p>
-                                </div>
-                            </div>
-                            <!-- Extra infos -->
-                             <div>
-                                <!-- upper -->
-                                <div class="flex flex-col md:flex-row gap-1 md:gap-4 items-center">
-                                    <div class="font-semibold text-[#495560]  flex gap-2 items-center">
-                                        <p>Language: </p>
-                                        <p>Bangla</p>
-                                    </div>
-                                    <div class="hidden md:block">
-                                        <h1 class="text-[495560] ">|</h1>
-                                    </div>
-                                    <div class="font-semibold text-[#495560]  flex gap-2 items-center">
-                                        <p><i class="fa-solid fa-map-location"></i></p>
-                                        <p>Chittagong</p>
-                                    </div>
-                                </div>
-                                <!-- lower -->
-                                <div class="flex flex-col md:flex-row gap-1 md:gap-4 items-center">
-                                    <div class="font-semibold text-[#495560]  flex gap-2 items-center">
-                                        <p>Experience: </p>
-                                        <p>3 Years</p>
-                                    </div>
-                                    <div class="hidden md:block">
-                                        <h1 class="text-[495560] ">|</h1>
-                                    </div>
-                                    <div class="font-semibold text-[#495560]  flex gap-2 items-center">
-                                        <p><i class="fa-solid fa-phone"></i></p>
-                                        <p>+880 123456789</p>
-                                    </div>
-                                </div>
-
-                             </div>
-                        </div>
-                        <!-- Price -->
-                         <div class="md:mt-0 mt-2">
-                            <h1 class="text-center md:text-left font-volkhov text-[#7BBCB0] text-xl md:text-2xl font-bold">TK: 250.00</h1>
-                            <p class="text-center md:text-right -mt-2 text-[#778088] text-[12px]">per person</p>
-                         </div>
-                    </div>
-                 </div>
+      <div>
+        <h1 class="text-xl text-black text-left font-bold">
+          Your Selected Guide:
+        </h1>
+      </div>
+      <!-- profile -->
+      <div
+        class="mt-10 flex flex-col md:flex-row justify-center gap-6 md:gap-0 md:justify-between items-center"
+      >
+        <!-- card -->
+        <div
+          class="w-full p-2 shadow-xl flex gap-4 md:flex-row flex-col items-center rounded-md md:w-4/6"
+        >
+          <!-- img -->
+          <div>
+            <img
+              src="./assets/guidePP.jpeg"
+              alt="Guide Profile Picture"
+              class="rounded-md"
+            />
+          </div>
+          <!-- guide info -->
+          <div class="flex flex-col gap-4">
+            <!-- upper div ratings -->
+            <div class="flex flex-col md:flex-row gap-2 md:gap-4 items-center">
+              <div>
+                <h1
+                  class="font-bold text-white text-lg md:text-xl bg-[#7BBCB0] py-1 px-5 rounded-full"
+                >
+                  KUAKATA
+                </h1>
+              </div>
+              <div class="hidden md:block">
+                <h1 class="text-[#C7CDD0] text-xl">|</h1>
+              </div>
+              <div>
+                <div class="rating">
+                  <input
+                    type="radio"
+                    name="rating-1"
+                    class="mask mask-star bg-[#FFA432]"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-1"
+                    class="mask mask-star bg-[#FFA432]"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-1"
+                    class="mask mask-star bg-[#FFA432]"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-1"
+                    class="mask mask-star bg-[#FFA432]"
+                    checked="checked"
+                  />
+                  <input type="radio" name="rating-1" class="mask mask-star" />
+                </div>
+              </div>
+              <div>
+                <h1 class="text-[#778088] text-xl font-semibold">
+                  (584 reviews)
+                </h1>
+              </div>
             </div>
-            <!-- Hire Button -->
-             <div class="md:w-2/6 md:flex md:justify-end">
-                <button class="font-zen btn border-none bg-[#13253F] rounded-full text-white text-xl md:text-2xl md:px-16 px-10 h-[64px] md:h-[96px]">Hire Me</button>
-             </div>
+            <!-- lower divs -->
+            <div
+              class="flex flex-col md:flex-row justify-between w-full md:gap-10"
+            >
+              <!-- Name -->
+              <div>
+                <!-- name div -->
+                <div>
+                  <h1 class="font-bold font-volkhov text-2xl text-[#1C2B38]">
+                    Raihan Ahmad
+                  </h1>
+                </div>
+                <!-- other info div -->
+                <div
+                  class="flex flex-col md:flex-row gap-1 md:gap-4 items-center"
+                >
+                  <div
+                    class="font-semibold text-[#495560] flex gap-2 items-center"
+                  >
+                    <p><i class="fa-regular fa-clock"></i></p>
+                    <p>2 hours</p>
+                  </div>
+                  <div class="hidden md:block">
+                    <h1 class="text-[495560]">|</h1>
+                  </div>
+                  <div
+                    class="font-semibold text-[#495560] flex gap-2 items-center"
+                  >
+                    <p><i class="fa-solid fa-truck-monster"></i></p>
+                    <p>Transport</p>
+                  </div>
+                  <div class="hidden md:block">
+                    <h1 class="text-[495560]">|</h1>
+                  </div>
+
+                  <div
+                    class="font-semibold text-[#495560] flex gap-2 items-center"
+                  >
+                    <p><i class="fa-solid fa-people-roof"></i></p>
+                    <p>Family Plan</p>
+                  </div>
+                </div>
+                <!-- Extra infos -->
+                <div>
+                  <!-- upper -->
+                  <div
+                    class="flex flex-col md:flex-row gap-1 md:gap-4 items-center"
+                  >
+                    <div
+                      class="font-semibold text-[#495560] flex gap-2 items-center"
+                    >
+                      <p>Language:</p>
+                      <p>Bangla</p>
+                    </div>
+                    <div class="hidden md:block">
+                      <h1 class="text-[495560]">|</h1>
+                    </div>
+                    <div
+                      class="font-semibold text-[#495560] flex gap-2 items-center"
+                    >
+                      <p><i class="fa-solid fa-map-location"></i></p>
+                      <p>Chittagong</p>
+                    </div>
+                  </div>
+                  <!-- lower -->
+                  <div
+                    class="flex flex-col md:flex-row gap-1 md:gap-4 items-center"
+                  >
+                    <div
+                      class="font-semibold text-[#495560] flex gap-2 items-center"
+                    >
+                      <p>Experience:</p>
+                      <p>3 Years</p>
+                    </div>
+                    <div class="hidden md:block">
+                      <h1 class="text-[495560]">|</h1>
+                    </div>
+                    <div
+                      class="font-semibold text-[#495560] flex gap-2 items-center"
+                    >
+                      <p><i class="fa-solid fa-phone"></i></p>
+                      <p>+880 123456789</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Price -->
+              <div class="md:mt-0 mt-2">
+                <h1
+                  class="text-center md:text-left font-volkhov text-[#7BBCB0] text-xl md:text-2xl font-bold"
+                >
+                  TK: 250.00
+                </h1>
+                <p
+                  class="text-center md:text-right -mt-2 text-[#778088] text-[12px]"
+                >
+                  per person
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- Hire Button -->
+        <div class="md:w-2/6 md:flex md:justify-end">
+          <button
+            class="font-zen btn border-none bg-[#13253F] rounded-full text-white text-xl md:text-2xl md:px-16 px-10 h-[64px] md:h-[96px]"
+          >
+            Hire Me
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- guide div part-2 -->
+    <div class="w-4/5 mx-auto mt-16">
+      <div
+        class="flex flex-col gap-4 md:gap-0 md:flex-row justify-center md:justify-between items-center"
+      >
+        <!-- left div -->
+        <div
+          class="gap-2 flex flex-col md:justify-start justify-center md:items-start items-center"
+        >
+          <div class="flex gap-4 items-center">
+            <h1 class="text-black font-extrabold md:text-4xl text-3xl">4.00</h1>
+            <p class="text-[#778088]">14 Reviews</p>
+          </div>
+          <div>
+            <div class="rating">
+              <input
+                type="radio"
+                name="rating-1"
+                class="mask mask-star bg-[#FFA432]"
+              />
+              <input
+                type="radio"
+                name="rating-1"
+                class="mask mask-star bg-[#FFA432]"
+              />
+              <input
+                type="radio"
+                name="rating-1"
+                class="mask mask-star bg-[#FFA432]"
+              />
+              <input
+                type="radio"
+                name="rating-1"
+                class="mask mask-star bg-[#FFA432]"
+                checked="checked"
+              />
+              <input type="radio" name="rating-1" class="mask mask-star" />
+            </div>
+          </div>
+        </div>
+        <!-- right div -->
+        <div class="bg-[#E6E6E6] rounded-3xl w-full md:w-[350px] px-8 py-6">
+          <h1 class="text-black">
+            Proficiency in: English, Bangla, and French.Guided: Nearly 20
+            individuals.
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- customer rev -->
+    <div class="w-4/5 mx-auto mt-16">
+      <div class="flex md:justify-between flex-col md:flex-row">
+        <div>
+          <h1 class="text-xl text-black text-left font-bold">
+            Customer Review
+          </h1>
+        </div>
+        <div class="flex gap-2 items-center">
+          <!-- name -->
+          <div class="flex flex-col">
+            <h1 class="font-bold text-[#495560]">Guide</h1>
+            <h1 class="font-bold text-[#495560]">Transportation</h1>
+            <h1 class="font-bold text-[#495560]">Value for money</h1>
+            <h1 class="font-bold text-[#495560]">Safety</h1>
+          </div>
+          <!-- progress -->
+          <div class="flex flex-col gap-4">
+            <progress
+              class="progress progress-warning w-36 md:w-56"
+              value="4.8"
+              max="5"
+            ></progress>
+            <progress
+              class="progress progress-warning w-36 md:w-56"
+              value="3.0"
+              max="5"
+            ></progress>
+            <progress
+              class="progress progress-warning w-36 md:w-56"
+              value="4.5"
+              max="5"
+            ></progress>
+            <progress
+              class="progress progress-warning w-36 md:w-56"
+              value="4.0"
+              max="5"
+            ></progress>
+          </div>
+          <!-- rating -->
+          <div class="flex flex-col">
+            <h1 class="font-bold text-[#495560]">4.8</h1>
+            <h1 class="font-bold text-[#495560]">3.0</h1>
+            <h1 class="font-bold text-[#495560]">4.5</h1>
+            <h1 class="font-bold text-[#495560]">4.0</h1>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
